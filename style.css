@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #123deb;
+  --second-color: #3f4a52;
+  --third-color: white;
+  --fourth-color: #420099;
+
+  /* title */
+  --ff-1: 'votorantim_sansbold', sans-serif;
+  /* text */
+  --ff-2: 'votorantim_sansregular', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+}
+body {
+  font-size: 1.6rem;
+}
+
+body,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: var(--ff-2);
+}
+
+/* ---------------HEADER------------ */
+
+.container {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+  position: relative;
+  border-bottom: 1px solid var(--second-color);
+}
+
+.logo {
+  width: 16rem;
+  height: 5rem;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.nav {
+  gap: 12rem;
+}
+
+.nav li a {
+  font-size: 3.5rem;
+  font-family: var(--ff-1);
+}
+
+/* -------------RESPONSIVE----------- */
+@media (max-width: 770px) {
+  html {
+    font-size: 55%;
+  }
+  .navbar-nav {
+  }
+}
