@@ -13,7 +13,7 @@
 
 html {
   font-size: 62.5%;
-  height: 1vh;
+  height: 100vh;
 }
 
 * {
@@ -101,7 +101,7 @@ REUSED
   background-size: cover;
   background-repeat: no-repeat;
   background-position: start start;
-  margin-top: -18px;
+  /* margin-top: -18px; */
 }
 
 .logo-page h1 {
@@ -210,7 +210,7 @@ REUSED
   height: 65vh;
 }
 .contact-image {
-  margin-top: -16px;
+  /* margin-top: -16px; */
 }
 
 .contact {
@@ -363,16 +363,9 @@ REUSED
   .product img {
     max-width: 400px;
   }
-
-  .logo-page {
-    margin-top: -26px;
-  }
-  .contact-image {
+  /* .contact-image {
     margin-top: -24px;
-  }
-  .contact-image {
-    margin-top: -25px;
-  }
+  } */
 }
 
 /* 768 PX */
@@ -381,15 +374,11 @@ REUSED
     font-size: 50%;
   }
 
-  .logo-page {
-    margin-top: -30px;
-  }
-
   .social {
     display: none;
   }
   .contact-image {
-    margin-top: -30px;
+    /* margin-top: -30px; */
   }
   .video {
     height: 400px;
@@ -407,28 +396,28 @@ REUSED
     max-width: 300px;
   }
   .contact-image {
-    margin-top: -30px;
+    /* margin-top: -30px; */
   }
 }
 
 /* 425 */
-@media (max-width: 425px) {
+@media (max-width: 440px) {
   html {
     font-size: 45%;
   }
   .product img {
     display: none;
   }
-  .navbar {
-  }
-  .navbar-nav {
+  .video {
+    height: 260px;
+    width: 370px;
   }
 }
 
 /* MENU TOGGLE */
-@media (max-width: 425px) {
+@media (max-width: 440px) {
   .navbar {
-    height: 25vh;
+    height: 33vh;
   }
   .navbar-header {
   }
@@ -443,5 +432,15 @@ REUSED
     background: var(--fifth-color);
     padding: 2rem;
     border: 1px solid var(--second-color);
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 40%;
+  }
+  .video {
+    height: 200px;
+    width: 300px;
   }
 }
