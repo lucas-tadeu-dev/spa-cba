@@ -1,5 +1,80 @@
 <!-- contact.html -->
-<div>
-    <h1>Contact</h1>
-    <p>{{title}}</p>
+<div class="contact-image">
+  <h1 class="footer-list-title">Fale Conosco</h1>
+  <div class="contact">
+    <div class="formcontainer">
+      <form
+        action="https://formsubmit.co/atendimento@lucastadeu.com.br"
+        method="POST"
+        class="footer-form"
+      >
+        <label for="nome">Nome ou Empresa</label>
+        <input
+          type="text"
+          name="full_name"
+          required
+          placeholder="Seu nome"
+          aria-label="Seu nome"
+          id="nome"
+          class="input-field"
+        />
+
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Email"
+          aria-label="seu email"
+          id="email"
+          class="input-field"
+        />
+
+        <label for="message"
+          >Você pode enviar uma dúvida técnica, fazer uma reclamação, solicitar
+          contato comercial
+        </label>
+        <textarea
+          name="message"
+          aria-label="Message"
+          class="input-field"
+          placeholder="Mensagem"
+        ></textarea>
+
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5500/thanks.html"
+        />
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+    <div class="social">
+      <h2>
+        Estamos prontos para te ouvir. <br /><br />
+        Você pode enviar uma dúvida técnica, fazer uma reclamação, solicitar
+        contato comercial. Escolha o assunto e fale conosco.
+        <br /><br />
+        Nos siga também em nossas redes socias:
+      </h2>
+      <div class="share">
+        <a href="#" class="btn">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="btn">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="btn">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="btn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="btn">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>

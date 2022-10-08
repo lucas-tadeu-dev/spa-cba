@@ -1,21 +1,25 @@
-app.config(function($routeProvider, $locationProvider) {
+app.config(function ($routeProvider, $locationProvider) {
+  $routeProvider
 
-    $routeProvider
-
-        .when('/', {
-        templateUrl: 'app/views/home.html',
-        controller: 'HomeCtrl',
+    .when('/', {
+      templateUrl: 'app/views/home.html',
+      controller: 'HomeCtrl'
     })
 
     .when('/about', {
-        templateUrl: 'app/views/about.html',
-        controller: 'AboutCtrl',
+      templateUrl: 'app/views/about.html',
+      controller: 'HomeCtrl'
+    })
+
+    .when('/service', {
+      templateUrl: 'app/views/service.html',
+      controller: 'AboutCtrl'
     })
 
     .when('/contact', {
-        templateUrl: 'app/views/contact.html',
-        controller: 'ContactCtrl',
+      templateUrl: 'app/views/contact.html',
+      controller: 'ContactCtrl'
     })
 
-    .otherwise({ redirectTo: '/' });
-});
+    .otherwise({ redirectTo: '/' })
+})

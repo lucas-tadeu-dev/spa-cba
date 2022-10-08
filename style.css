@@ -3,6 +3,7 @@
   --second-color: #3f4a52;
   --third-color: white;
   --fourth-color: #420099;
+  --fifth-color: #ededed;
 
   /* title */
   --ff-1: 'votorantim_sansbold', sans-serif;
@@ -12,6 +13,7 @@
 
 html {
   font-size: 62.5%;
+  height: 1vh;
 }
 
 * {
@@ -35,6 +37,10 @@ p {
 }
 
 /* ---------------HEADER------------ */
+.navbar {
+  height: 10vh;
+  margin: -17px;
+}
 
 .container {
   width: 100%;
@@ -44,7 +50,7 @@ p {
   justify-content: space-between;
   padding: 2.5rem;
   position: relative;
-  border-bottom: 1px solid var(--second-color);
+  border-bottom: 2px solid var(--second-color);
 }
 
 .logo {
@@ -63,6 +69,248 @@ p {
 .nav li a {
   font-size: 3.5rem;
   font-family: var(--ff-1);
+  color: var(--second-color);
+}
+
+/* -------------------
+      HOME
+------------------ */
+
+.logo-page {
+  width: 100vw;
+  height: 52vh;
+  background-image: url(./img/banner-about.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: start start;
+}
+
+.logo-page h1 {
+  font-family: var(--ff-1);
+  font-size: 5rem;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--fifth-color);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.logo-page span {
+  color: rgb(15, 211, 232);
+}
+
+.logo-h2 {
+  height: 29vh;
+  max-width: 80%;
+  margin-left: 10%;
+  font-weight: 400;
+  font-family: var(--ff-2);
+  color: var(--second-color);
+  font-size: 2.2rem;
+}
+
+/* SOBRE NÓS */
+
+.about {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about h1 {
+  font-family: var(--ff-1);
+  color: var(--second-color);
+  max-width: 45ch;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+
+/*-----------
+ SERVICE
+--------- */
+.service {
+  background: var(--fifth-color);
+  padding: 5vh;
+  text-align: center;
+}
+
+.service h2 {
+  font-family: var(--ff-1);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.service h1 {
+  font-size: 4.2rem;
+  font-weight: lighter;
+}
+
+.product {
+  display: flex;
+  margin-left: 5%;
+  max-width: 90%;
+  margin-top: 3%;
+  gap: 20px;
+}
+.product img {
+  height: 38vh;
+}
+
+.product h2 span {
+  color: var(--primary-color);
+  font-family: var(--ff-1);
+  font-size: 3rem;
+}
+
+.product h2 {
+  color: var(--second-color);
+  max-width: 60ch;
+  font-size: 2rem;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  align-items: end;
+  position: absolute;
+  height: 5vh;
+}
+
+/*----------------]
+ CONTACT
+ ------------------- */
+.contact-image {
+  background-image: url(./img/banner-aplicabilidade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  gap: 6rem;
+}
+
+.formcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.footer-form {
+  width: 100%;
+  display: block;
+}
+
+.formcontainer {
+  width: 50%;
+  font-size: 1.125rem;
+}
+
+.formcontainer label,
+.formcontainer input,
+.formcontainer textarea,
+.formcontainer button {
+  font-size: 1.7rem;
+  color: var(--second-color);
+  display: block;
+  width: 100%;
+  background: var(--fifth-color);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.formcontainer label {
+  text-align: start;
+  color: var(--second-color);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.formcontainer input,
+.formcontainer textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.formcontainer textarea {
+  min-height: 20rem;
+  resize: vertical;
+}
+
+.formcontainer input:is(:hover, :focus),
+.formcontainer textarea:is(:hover, :focus) {
+  outline: none;
+  border-color: var(--second-color);
+  box-shadow: 0 0 0 3px var(--fourth-color);
+}
+
+.formcontainer button {
+  display: block;
+  padding: 1rem;
+  max-width: 25%;
+  background-color: var(--fourth-color);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.formcontainer button:is(:hover, :focus) {
+  outline: 0;
+  background: var(--fourth-color);
+  color: #fff;
+}
+
+.contact-image h1 {
+  color: var(--primary-color);
+  font-size: 5rem;
+  text-align: center;
+}
+
+.social h2 {
+  font-weight: 400;
+  font-size: 2.6rem;
+  max-width: 30ch;
+}
+
+.share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.share a {
+  height: 6rem;
+  width: 4rem;
+  line-height: 5rem;
+  border-radius: 50%;
+  margin: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0;
+  color: var(--fourth-color);
 }
 
 /* -------------RESPONSIVE----------- */
