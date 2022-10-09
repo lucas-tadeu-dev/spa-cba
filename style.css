@@ -209,6 +209,7 @@ REUSED
   background-size: cover;
   height: 75vh;
 }
+
 .contact-image {
   margin-top: -8px;
 }
@@ -247,12 +248,13 @@ REUSED
 .formcontainer input,
 .formcontainer textarea,
 .formcontainer button {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: var(--second-color);
   display: block;
   width: 100%;
   background: var(--fifth-color);
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--fourth-color);
+  border-radius: 4px;
 }
 
 .formcontainer label {
@@ -271,6 +273,7 @@ REUSED
   border: 1px solid transparent;
   border-radius: 8px;
   transition: border-color, box-shadow 0.2s;
+  border: 1px solid var(--primary-color);
 }
 
 .formcontainer textarea {
