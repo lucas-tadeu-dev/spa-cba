@@ -153,7 +153,7 @@ REUSED
 }
 
 /*-----------
- SERVICE
+PRODUCTS
 --------- */
 .service {
   background: var(--fifth-color);
@@ -173,35 +173,226 @@ REUSED
   font-weight: lighter;
 }
 
-.product {
-  display: flex;
-  margin-left: 5%;
-  max-width: 90%;
-  margin-top: 3%;
-  gap: 20px;
-}
-.product img {
-  height: 38vh;
-}
-
-.product h2 span {
-  color: var(--primary-color);
+.product-title {
+  text-align: center;
+  font-size: 4rem;
   font-family: var(--ff-1);
-  font-size: 3rem;
+  color: var(--primary-color);
+  font-weight: 750;
 }
-
-.product h2 {
+.order-product {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
+}
+/*-----------
+ VERGALHAO
+---------- */
+.vergalhao {
+  position: relative;
+  text-align: center;
   color: var(--second-color);
-  max-width: 60ch;
-  font-size: 2rem;
+  z-index: 99;
+  padding: 10px 20px;
+  background: var(--fifth-color);
+  background-size: cover;
+  height: 50px;
+  width: 19rem;
+  font-size: 3rem;
+  border: 1px solid var(--second-color);
 }
-
+.vergalhao-product {
+  position: absolute;
+  background: var(--primary-color);
+  color: var(--second-color);
+  border: 5px;
+  opacity: 0;
+  transition: 0.01s;
+  display: flex;
+}
+.vergalhao:is(:hover, :focus) {
+  background: var(--primary-color);
+  color: var(--third-color);
+  font-weight: 600;
+}
+.vergalhao-active {
+  opacity: 1;
+  background: var(--fifth-color);
+}
+.vergalhao-product img {
+  width: 40%;
+  margin-left: 10%;
+}
+.vergalhao-product h2 {
+  margin-left: 3rem;
+  font-size: 2.8rem;
+  width: 40%;
+  letter-spacing: 0.3px;
+  font-family: var(--ff-1);
+}
+.vergalhao-product span {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+/*-----------
+ TARUGO
+---------- */
+.tarugo {
+  position: relative;
+  text-align: center;
+  color: var(--second-color);
+  z-index: 99;
+  padding: 10px 20px;
+  background: var(--fifth-color);
+  background-size: cover;
+  height: 50px;
+  width: 19rem;
+  font-size: 3rem;
+  border: 1px solid var(--second-color);
+}
+.tarugo-product {
+  position: absolute;
+  background: var(--primary-color);
+  color: var(--second-color);
+  border: 5px;
+  opacity: 0;
+  transition: 0.01s;
+  display: flex;
+}
+.tarugo:is(:hover, :focus) {
+  background: var(--primary-color);
+  color: var(--third-color);
+  font-weight: 600;
+}
+.tarugo-active {
+  opacity: 1;
+  background: var(--fifth-color);
+}
+.tarugo-product img {
+  width: 40%;
+  margin-left: 10%;
+}
+.tarugo-product h2 {
+  margin-left: 3rem;
+  font-size: 2.8rem;
+  width: 40%;
+  letter-spacing: 0.3px;
+  font-family: var(--ff-1);
+}
+.tarugo-product span {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+/*----------
+ LINGOTE-----------
+*/
+.lingote {
+  position: relative;
+  text-align: center;
+  color: var(--second-color);
+  z-index: 99;
+  padding: 10px 20px;
+  background: var(--fifth-color);
+  background-size: cover;
+  height: 50px;
+  width: 19rem;
+  font-size: 3rem;
+  border: 1px solid var(--second-color);
+}
+.lingote-product {
+  position: absolute;
+  background: var(--primary-color);
+  color: var(--second-color);
+  border: 5px;
+  opacity: 0;
+  transition: 0.01s;
+  display: flex;
+}
+.lingote:is(:hover, :focus) {
+  background: var(--primary-color);
+  color: var(--third-color);
+  font-weight: 600;
+}
+.lingote-active {
+  opacity: 1;
+  background: var(--fifth-color);
+}
+.lingote-product img {
+  width: 40%;
+  margin-left: 10%;
+}
+.lingote-product h2 {
+  margin-left: 3rem;
+  font-size: 2.8rem;
+  width: 40%;
+  letter-spacing: 0.3px;
+  font-family: var(--ff-1);
+}
+.lingote-product span {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+/* ---------
+PERFIL
+------- */
+.folha {
+  position: relative;
+  text-align: center;
+  color: var(--second-color);
+  z-index: 99;
+  padding: 10px 20px;
+  background: var(--fifth-color);
+  background-size: cover;
+  height: 50px;
+  width: 19rem;
+  font-size: 3rem;
+  border: 1px solid var(--second-color);
+}
+.folha-product {
+  position: absolute;
+  background: var(--primary-color);
+  color: var(--second-color);
+  border: 5px;
+  opacity: 0;
+  transition: 0.01s;
+  display: flex;
+}
+.folha:is(:hover, :focus) {
+  background: var(--primary-color);
+  color: var(--third-color);
+  font-weight: 600;
+}
+.folha-active {
+  opacity: 1;
+  background: var(--fifth-color);
+}
+.folha-product img {
+  width: 40%;
+  margin-left: 10%;
+}
+.folha-product h2 {
+  margin-left: 3rem;
+  font-size: 2.8rem;
+  width: 40%;
+  letter-spacing: 0.3px;
+  font-family: var(--ff-1);
+}
+.folha-product span {
+  font-size: 5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
 /* FOOTER */
 .footer {
   text-align: center;
   align-items: end;
-  position: absolute;
-  /* height: 5vh; */
+  z-index: -1;
+  /* transform: translateY(450px); */
 }
 
 /*----------------]
@@ -435,6 +626,42 @@ REUSED
 
   .contact-image {
     margin-top: -23px;
+  }
+  .folha-product {
+    flex-direction: column;
+  }
+  .folha-product img {
+    width: 80%;
+  }
+  .folha-product h2 {
+    width: 80%;
+  }
+  .tarugo-product {
+    flex-direction: column;
+  }
+  .tarugo-product img {
+    width: 80%;
+  }
+  .tarugo-product h2 {
+    width: 80%;
+  }
+  .lingote-product {
+    flex-direction: column;
+  }
+  .lingote-product img {
+    width: 80%;
+  }
+  .lingote-product h2 {
+    width: 80%;
+  }
+  .vergalhao-product {
+    flex-direction: column;
+  }
+  .vergalhao-product img {
+    width: 80%;
+  }
+  .vergalhao-product h2 {
+    width: 80%;
   }
 }
 

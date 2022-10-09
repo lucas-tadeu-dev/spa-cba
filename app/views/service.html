@@ -6,20 +6,85 @@
     mais complexos da sociedade.
   </h1>
 </div>
-<div class="product">
-  <img src="../../img/products-thumb1.jpg" alt="image" class="service-image" />
-  <h2 class="produc-title animation">
-    <span>Qualidade e Parceria</span>
-    <br />
-    <br />
-    Superamos o desafio de oferecer produtos com excelência e qualidade. Hoje
-    vamos além. Atuamos em toda a cadeia de valor do alumínio, da extração da
-    bauxita até a transformação do metal. Investimos em parcerias para criar os
-    produtos que estão no cotidiano das pessoas.
+
+<h1 class="product-title">PRODUTOS</h1>
+
+<div class="order-product">
+  <h2 class="folha">Folha</h2>
+  <h2 class="lingote">Lingote</h2>
+  <h2 class="tarugo">Tarugo</h2>
+  <h2 class="vergalhao">Vergalhão</h2>
+</div>
+<div class="folha-product">
+  <img src="../../img/folha.jpg" alt="folha-image" />
+  <h2>
+    <span>Folhas</span>
     <br /><br />
-    Vamos além dos produtos Primários e Transformados. Estamos próximos dos
-    negócios de nossos clientes, inspirando a competitividade no uso do alumínio
-    em múltiplas soluções para a sociedade. Conectamos você ao mundo de
-    possibilidades do alumínio.
+    As Folhas de Alumínio CBA estão nas embalagens, tampas e membranas, trazendo
+    praticidade, resistência e proteção para alimentos e produtos farmacêuticos.
+    São amplamente utilizadas em trocadores de calor, aplicações em veículos,
+    refrigeração e sistemas de ar condicionado.
   </h2>
 </div>
+<!--------------- LINGOTE --------------->
+<div class="lingote-product">
+  <img src="../../img/lingotes.jpg" alt="lingote-image" />
+  <h2>
+    <span>Lingote</span>
+    <br /><br />
+    Produzimos lingotes destinados à refusão, utilizados como matéria-prima em
+    indústrias de fundição, laminação e desoxidação. Os lingotes CBA são obtidos
+    a partir da solidificação do alumínio em moldes permanentes, chamados
+    coquilhas, com resfriamento controlado.
+  </h2>
+</div>
+<!--------------- TARUGO ------------>
+<div class="tarugo-product">
+  <img src="../../img/tarugo1.png" alt="tarugo-image" />
+  <h2>
+    <span>Tarugo</span>
+    <br /><br />
+    Os tarugos fabricados pela CBA apresentam melhor acabamento superficial e
+    estrutura interna mais fina e uniforme do que os convencionais. Utilizamos a
+    técnica de air-casting Wagstaff AirSlip®, com tratamentos de
+    desgaseificação, filtragem e refino de grãos.
+  </h2>
+</div>
+<!--------------- VERGALHÃO ------------>
+<div class="vergalhao-product">
+  <img src="../../img/vergalhao.jpg" alt="vergalhao-image" />
+  <h2>
+    <span>Vergalhao</span>
+    <br /><br />
+    Os vergalhões CBA são usados para fazer cabos e fios. Fabricamos vergalhões
+    usando o processo Properzi de fundição centrífuga, que fornece uma seção
+    transversal aproximadamente circular. No processo produtivo, o alumínio
+    líquido é transformado em barras, comprimido no processo de laminação e
+    depois enrolado.
+  </h2>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+  const folha = document.querySelector('.folha')
+  const folhaProduct = document.querySelector('.folha-product')
+  const lingote = document.querySelector('.lingote')
+  const lingoteProduct = document.querySelector('.lingote-product')
+  const tarugo = document.querySelector('.tarugo')
+  const tarugoProduct = document.querySelector('.tarugo-product')
+  const vergalhao = document.querySelector('.vergalhao')
+  const vergalhaoProduct = document.querySelector('.vergalhao-product')
+
+  folha.addEventListener('click', () => {
+    folhaProduct.classList.toggle('folha-active')
+  })
+  lingote.addEventListener('click', () => {
+    lingoteProduct.classList.toggle('lingote-active')
+  })
+  tarugo.addEventListener('click', () => {
+    tarugoProduct.classList.toggle('tarugo-active')
+  })
+  vergalhao.addEventListener('click', () => {
+    vergalhaoProduct.classList.toggle('vergalhao-active')
+  })
+</script>
