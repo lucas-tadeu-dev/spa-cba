@@ -101,18 +101,18 @@ REUSED
   background-size: cover;
   background-repeat: no-repeat;
   background-position: start start;
-  /* margin-top: -18px; */
+  margin-top: -1px;
 }
 
 .logo-page h1 {
   font-family: var(--ff-1);
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   backdrop-filter: blur(2px);
   background: rgba(0, 0, 0, 0.4);
   color: var(--fifth-color);
   border-radius: 20px;
-  padding: 20px;
+  padding: 9px;
 }
 
 .logo-page span {
@@ -207,10 +207,10 @@ REUSED
   background-image: url(./img/banner-aplicabilidade.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 65vh;
+  height: 75vh;
 }
 .contact-image {
-  /* margin-top: -16px; */
+  margin-top: -8px;
 }
 
 .contact {
@@ -260,6 +260,7 @@ REUSED
   color: var(--second-color);
   line-height: 1;
   margin-bottom: 0.5rem;
+  font-weight: 800;
 }
 
 .formcontainer input,
@@ -377,9 +378,6 @@ REUSED
   .social {
     display: none;
   }
-  .contact-image {
-    /* margin-top: -30px; */
-  }
   .video {
     height: 400px;
     width: 600px;
@@ -396,11 +394,14 @@ REUSED
     max-width: 300px;
   }
   .contact-image {
-    /* margin-top: -30px; */
+    margin-top: -9px;
   }
 
   .logo-h2 {
     margin-bottom: 7%;
+  }
+  .logo-page {
+    margin-top: -4px;
   }
 }
 
@@ -418,6 +419,14 @@ REUSED
   }
   .logo-h2 {
     margin-bottom: 35%;
+  }
+
+  .logo-page {
+    margin-top: -18px;
+  }
+
+  .contact-image {
+    margin-top: -23px;
   }
 }
 
@@ -449,5 +458,15 @@ REUSED
   .video {
     height: 200px;
     width: 300px;
+  }
+  .logo-page {
+    margin-top: -41px;
+  }
+  .footer {
+    margin-top: 53%;
+  }
+
+  .contact-image {
+    margin-top: -44px;
   }
 }
