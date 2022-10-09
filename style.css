@@ -13,7 +13,6 @@
 
 html {
   font-size: 62.5%;
-  height: 100vh;
 }
 
 * {
@@ -89,9 +88,11 @@ REUSED
   font-family: var(--ff-1);
   color: var(--second-color);
 }
-.navbar li a:is(:hover, :focus) {
+.navbar li:is(:hover, :focus) {
   background: var(--primary-color);
   padding: 15px 20px;
+}
+.navbar li a:is(:hover, :focus) {
   color: #fff;
 }
 /* -------------------
@@ -100,7 +101,7 @@ REUSED
 
 .logo-page {
   width: 100vw;
-  height: 52vh;
+  height: 40rem;
   background-image: url(./img/banner-about.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -124,7 +125,6 @@ REUSED
 }
 
 .logo-h2 {
-  height: 29vh;
   max-width: 80%;
   margin-left: 10%;
   font-weight: 400;
@@ -201,7 +201,7 @@ REUSED
   text-align: center;
   align-items: end;
   position: absolute;
-  height: 5vh;
+  /* height: 5vh; */
 }
 
 /*----------------]
@@ -373,6 +373,7 @@ REUSED
   }
   .contact-image {
     margin-bottom: 4%;
+    margin-top: 4rem;
   }
 }
 
@@ -401,7 +402,7 @@ REUSED
     max-width: 300px;
   }
   .contact-image {
-    margin-top: -9px;
+    margin-top: 36px;
   }
 
   .logo-h2 {
@@ -440,7 +441,7 @@ REUSED
 /* MENU TOGGLE */
 @media (max-width: 440px) {
   .navbar {
-    height: 33vh;
+    height: 30%;
   }
 
   .nav {
@@ -455,7 +456,7 @@ REUSED
     padding: 2rem;
     border: 1px solid var(--second-color);
   }
-  .navbar-nav li a:is(:hover, :focus) {
+  .navbar-nav li:is(:hover, :focus) {
     background: var(--primary-color);
     color: #ededed;
   }
@@ -470,13 +471,9 @@ REUSED
     width: 300px;
   }
   .logo-page {
-    margin-top: -41px;
+    margin-top: -18px;
   }
-  .footer {
-    margin-top: 53%;
-  }
-
   .contact-image {
-    margin-top: -44px;
+    margin-top: -20px;
   }
 }
