@@ -89,7 +89,11 @@ REUSED
   font-family: var(--ff-1);
   color: var(--second-color);
 }
-
+.navbar li a:is(:hover, :focus) {
+  background: var(--primary-color);
+  padding: 15px 20px;
+  color: #fff;
+}
 /* -------------------
       HOME
 ------------------ */
@@ -438,8 +442,7 @@ REUSED
   .navbar {
     height: 33vh;
   }
-  .navbar-header {
-  }
+
   .nav {
     display: flex;
     flex-direction: column;
@@ -451,6 +454,10 @@ REUSED
     background: var(--fifth-color);
     padding: 2rem;
     border: 1px solid var(--second-color);
+  }
+  .navbar-nav li a:is(:hover, :focus) {
+    background: var(--primary-color);
+    color: #ededed;
   }
 }
 
