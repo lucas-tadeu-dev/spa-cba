@@ -67,7 +67,6 @@ REUSED
   justify-content: space-between;
   padding: 2.5rem;
   position: relative;
-  border-bottom: 2px solid var(--second-color);
 }
 
 .logo {
@@ -106,7 +105,6 @@ REUSED
   background-size: cover;
   background-repeat: no-repeat;
   background-position: start start;
-  margin-top: -1px;
 }
 
 .logo-page h1 {
@@ -140,6 +138,7 @@ REUSED
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: 2px solid var(--second-color);
 }
 
 .about h1 {
@@ -405,10 +404,6 @@ PERFIL
   height: 75vh;
 }
 
-.contact-image {
-  margin-top: -8px;
-}
-
 .contact {
   display: flex;
   flex-direction: row-reverse;
@@ -562,10 +557,6 @@ PERFIL
   .product img {
     max-width: 400px;
   }
-  .contact-image {
-    margin-bottom: 4%;
-    margin-top: 4rem;
-  }
 }
 
 /* 768 PX */
@@ -592,15 +583,9 @@ PERFIL
   .product img {
     max-width: 300px;
   }
-  .contact-image {
-    margin-top: 36px;
-  }
 
   .logo-h2 {
     margin-bottom: 7%;
-  }
-  .logo-page {
-    margin-top: -4px;
   }
 }
 
@@ -620,13 +605,6 @@ PERFIL
     margin-bottom: 35%;
   }
 
-  .logo-page {
-    margin-top: -18px;
-  }
-
-  .contact-image {
-    margin-top: -23px;
-  }
   .folha-product {
     flex-direction: column;
   }
@@ -697,9 +675,7 @@ PERFIL
     height: 200px;
     width: 300px;
   }
-  .logo-page {
-    margin-top: -18px;
-  }
+
   .contact-image {
     margin-top: -20px;
   }
