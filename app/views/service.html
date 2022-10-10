@@ -77,14 +77,26 @@
 
   folha.addEventListener('click', () => {
     folhaProduct.classList.toggle('folha-active')
+    lingoteProduct.classList.remove('lingote-active')
+    tarugoProduct.classList.remove('tarugo-active')
+    vergalhaoProduct.classList.remove('vergalhao-active')
   })
   lingote.addEventListener('click', () => {
     lingoteProduct.classList.toggle('lingote-active')
+    folhaProduct.classList.remove('folha-active')
+    tarugoProduct.classList.remove('tarugo-active')
+    vergalhaoProduct.classList.remove('vergalhao-active')
   })
   tarugo.addEventListener('click', () => {
     tarugoProduct.classList.toggle('tarugo-active')
+    folhaProduct.classList.remove('folha-active')
+    vergalhaoProduct.classList.remove('vergalhao-active')
+    lingoteProduct.classList.remove('lingote-active')
   })
   vergalhao.addEventListener('click', () => {
     vergalhaoProduct.classList.toggle('vergalhao-active')
+    folhaProduct.classList.remove('folha-active')
+    tarugoProduct.classList.remove('tarugo-active')
+    lingoteProduct.classList.remove('lingote-active')
   })
 </script>
